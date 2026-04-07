@@ -7,7 +7,11 @@ html {
 body {
     margin: 1rem;
     background-color: black;
-    color: whitesmoke;
+    color: white;
+    text-shadow: -5px -5px 0 #000,  
+     5px -5px 0 #000,
+    -5px  5px 0 #000,
+     5px  5px 0 #000;
     font-size: 5rem;
     overflow: hidden;
    
@@ -35,28 +39,27 @@ div {
 
 .last {
 	padding-bottom: 2rem;
-	border-bottom: 2px solid whitesmoke;
+	border-bottom: 2px solid white;
 }
-/*
-.last:hover {
+
+.last:active {
 	animation-name: growAndGlow; 
-	animation-duration: 3s;
+	animation-duration: 4s;
 }
-*/
+
 
 @keyframes growAndGlow {
 	from {
-		color: whitesmoke;
+		transform: skew(30deg,30deg);
+        color: gold;
 	}
 
 	50% {
-		transform: skew(30deg,30deg);
-		color: dodgerblue;
+        transform: translateX(500px);
 	}
 
 	to {
-		transform: scale(3);
-		color: red;
+		color:black;
 	}
 
 }
