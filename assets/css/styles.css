@@ -12,7 +12,7 @@ body {
     overflow: hidden;
    
     background: black url("../img/flames.gif");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     /* shorthand, but has issues on Safari */
